@@ -1,8 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+html {
+  scroll-behavior: smooth;
+}
 :root {
   --text: #6b6375;
   --text-h: #08060d;
-  --bg: #fff;
-  --border: #e5e4e7;
+  --bg: #0e0b1a;
+  --bg2: #150f2a;
+  --bg3: #1c1535;
+    --p0: #EEEDFE;
+    --p1: #CECBF6;
+    --p2: #AFA9EC;
+    --p3: #7F77DD;
+    --p4: #534AB7;
+    --p5: #3C3489;
+    --p6: #26215C;
+  --border: #26215C;
   --code-bg: #f4f3ec;
   --accent: #aa3bff;
   --accent-bg: rgba(170, 59, 255, 0.1);
@@ -10,12 +23,12 @@
   --social-bg: rgba(244, 243, 236, 0.5);
   --shadow:
     rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
-
-  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --mono: ui-monospace, Consolas, monospace;
-
-  font: 18px/145% var(--sans);
+  --jetbrains: 'JetBrains Mono', monospace;
+ 
+  --lightFont: #AFA9EC;
+  --darkFont: #7F77DD;
+  --purpleButton: #7F77DD;
+  font: 18px/145% var(--jetbrains);
   letter-spacing: 0.18px;
   color-scheme: light dark;
   color: var(--text);
@@ -52,23 +65,24 @@
 
 body {
   margin: 0;
+  font-family: var(--jetbrains);
+  background: var(--bg);
 }
 
 #root {
-  width: 1126px;
   max-width: 100%;
   margin: 0 auto;
   text-align: center;
-  border-inline: 1px solid var(--border);
   min-height: 100svh;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
+  
 }
 
 h1,
 h2 {
-  font-family: var(--heading);
+  font-family: var(--jetbrains);
   font-weight: 500;
   color: var(--text-h);
 }
@@ -97,7 +111,7 @@ p {
 
 code,
 .counter {
-  font-family: var(--mono);
+  font-family: var(--jetbrains);
   display: inline-flex;
   border-radius: 4px;
   color: var(--text-h);
