@@ -37,8 +37,8 @@ const School = ({school, degree, description, tags, years, underline, location, 
             
             <span style={{fontSize: '11px', color: 'var(--p2)'}}>{description}</span>
             <TagContainer>
-                {tags.map((t) => {
-                return <ProjectTag tag={t}></ProjectTag>
+                {tags.map((t, index) => {
+                return <ProjectTag tag={t} key={index}></ProjectTag>
             })}
             </TagContainer>
             

@@ -37,8 +37,8 @@ const Skills = () => {
             <hr style={{width: '100%', borderTop: '1px solid var(--p6)', borderBottom: 'none', borderLeft: 'none', borderRight: 'none', margin: '0 10px'}}/>
         </div>
         <TagContainer>
-            {languages.map((l) => {
-                return <SkillsTag tag={l} purple={true}></SkillsTag>
+            {languages.map((l, index) => {
+                return <SkillsTag tag={l} purple={true} key={index}></SkillsTag>
             })}
         </TagContainer>
         <div style={{display: 'flex', flexDirection: 'row', alignItems: 'center'}}>
@@ -46,8 +46,8 @@ const Skills = () => {
             <hr style={{width: '100%', borderTop: '1px solid var(--p6)', borderBottom: 'none', borderLeft: 'none', borderRight: 'none', margin: '0 10px'}}/>
         </div>
         <TagContainer>
-            {tools.map((l) => {
-                return <SkillsTag tag={l} purple={false}></SkillsTag>
+            {tools.map((l, index) => {
+                return <SkillsTag tag={l} purple={false} key={index}></SkillsTag>
             })}
         </TagContainer>
         

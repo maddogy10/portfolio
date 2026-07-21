@@ -41,8 +41,8 @@ const Project = ({ title, description, tags, link}) => {
       <h2 style={{color: 'white', fontWeight: 'bold', fontSize: '14px'}}>{title}</h2>
       <p>{description}</p>
       <TagContainer>
-        {tags.map((t) => {
-          return <ProjectTag tag={t}></ProjectTag>
+        {tags.map((t, index) => {
+          return <ProjectTag tag={t} key={index}></ProjectTag>
         })}
       </TagContainer>
       
